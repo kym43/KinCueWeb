@@ -9,7 +9,7 @@ const translations = {
 
     // Hero
     'hero-title': '最好的關係，<br>從記得每一次互動開始。',
-    'hero-subtitle': 'KinCue 是一款專注於美感與體驗的家庭關係追蹤軟體，幫你記錄與家人的每一次通話、聚餐，並適時提醒你傳遞關心。',
+    'hero-subtitle': 'KinCue 是一款專注於體驗的家庭關係追蹤軟體，幫你記錄與家人的每一次通話、聚餐，並適時提醒你傳遞關心。',
     'hero-download': '在 App Store 下載',
     'hero-learn-more': '了解更多',
 
