@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinCue - 版本資訊</title>
+  <meta name="description" content="KinCue 版本更新紀錄。">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing">方案比較</a>
+      <a href="versions.html" data-i18n="nav-versions" class="active">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Versions Section -->
+  <section id="versions" class="versions-section" style="padding-top: 150px; min-height: calc(100vh - 100px);">
+    <h2 class="section-title fade-up" data-i18n="versions-section-title">版本資訊</h2>
+    <div class="versions-container">
+      <div class="version-item fade-up">
+        <div class="version-header">
+          <h3 class="version-number" data-i18n="version-1-title">版本 1.0.0</h3>
+          <span class="version-date" data-i18n="version-1-date">2026年8月</span>
+        </div>
+        <p class="version-desc" data-i18n="version-1-desc">KinCue 正式上線！包含互動時間軸、關心提醒以及桌面小工具等核心功能，幫助您與家人保持緊密聯繫。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-rights">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

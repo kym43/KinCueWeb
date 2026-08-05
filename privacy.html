@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隱私權政策 - KinCue</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-container {
+      padding: 160px 5% 100px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .policy-content {
+      width: 100%;
+    }
+    
+    .policy-hero {
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .eyebrow {
+      display: inline-block;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    
+    .policy-hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+      letter-spacing: -1px;
+    }
+    
+    .summary {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    
+    .effective-date {
+      color: var(--text-secondary);
+      font-size: 15px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .policy-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .policy-section {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 60px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-primary);
+    }
+    
+    .policy-section p {
+      color: var(--text-secondary);
+      font-size: 17px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .legal-container {
+        padding-top: 120px;
+      }
+      .policy-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+      }
+      .policy-hero h1 {
+        font-size: 36px;
+      }
+      .policy-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing">方案比較</a>
+      <a href="versions.html" data-i18n="nav-versions">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" class="active" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="legal-container">
+    <article class="policy-content">
+      <header class="policy-hero fade-up">
+        <p class="eyebrow">Privacy & Data</p>
+        <h1 data-i18n="privacy-title">隱私權政策</h1>
+        <p class="summary" data-i18n="privacy-summary">KinCue 不需要帳號即可使用，大部分關係資料都留在你的裝置上。本政策說明資料何時會離開裝置，以及你可以如何管理。</p>
+        <div class="effective-date" data-i18n="privacy-effective-date">生效日期：2026 年 8 月 3 日</div>
+      </header>
+      <div class="policy-body">
+        <section id="section-1" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-1-title">儲存在此裝置的資料</h2>
+          <p data-i18n="privacy-sec-1-desc">你加入的姓名、關係資訊、電話、重要日期、偏好、筆記、互動紀錄與照片會儲存在此裝置的 KinCue 中，除非你主動匯出、刪除或備份。</p>
+        </section>
+        <section id="section-2" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-2-title">由你選擇的權限</h2>
+          <p data-i18n="privacy-sec-2-desc">KinCue 只會使用你透過 Apple 聯絡人選取器挑選的聯絡人、你選取的照片，以及用於本機提醒的通知權限。你可以在「設定」App 中變更權限。</p>
+        </section>
+        <section id="section-3" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-3-title">選用的 iCloud 備份</h2>
+          <p data-i18n="privacy-sec-3-desc">只有在你提出要求時才會建立手動備份，並儲存在你 Apple 帳號的私人 iCloud Drive 空間。KinCue 不會在其他伺服器保留副本。</p>
+        </section>
+        <section id="section-4" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-4-title">Apple 訂閱</h2>
+          <p data-i18n="privacy-sec-4-desc">購買與付款由 Apple 處理。KinCue 只會取得商品資訊與經驗證的訂閱狀態，不會取得完整的付款卡資料。</p>
+        </section>
+        <section id="section-5" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-5-title">使用分析</h2>
+          <p data-i18n="privacy-sec-5-desc">正式版本使用 Firebase Analytics 收集 App 執行個體識別碼、由遮蔽後 IP 位址推導的粗略位置、訂閱商品與購買事件，以及 KinCue+ 購買和恢復流程的互動。這些分析事件會與某次 App 安裝連結，但不會與姓名、電話、聯絡人、筆記、照片或關係紀錄連結。KinCue 僅用於了解功能使用情形及改善 App，不會用於廣告或跨 App 追蹤。Google 會依 Firebase 專案設定的保存期間保留事件層級的 Analytics 資料。</p>
+        </section>
+        <section id="section-6" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-6-title">App 診斷</h2>
+          <p data-i18n="privacy-sec-6-desc">正式版本使用 Firebase Crashlytics 接收當機紀錄及有限的裝置、作業系統、App 版本與診斷資訊。這些資料不會連結你的關係紀錄，也不會用於廣告或追蹤。Firebase 通常保留當機報告 90 天。</p>
+        </section>
+        <section id="section-7" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-7-title">不販售、不投放廣告、不追蹤</h2>
+          <p data-i18n="privacy-sec-7-desc">KinCue 不會販售或出租個人資料、不顯示第三方廣告，也不會跨其他公司的 App 或網站追蹤你。Apple 提供 iCloud 與訂閱服務；Google 僅提供上述使用分析與當機診斷。</p>
+        </section>
+        <section id="section-8" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-8-title">保存與刪除</h2>
+          <p data-i18n="privacy-sec-8-desc">本機資料會保留到你刪除資料或移除 KinCue。手動備份可從 iCloud Drive 刪除，訂閱可在 Apple 帳號中管理，任何匯出都由 Apple 分享介面交由你控制。</p>
+        </section>
+        <section id="section-9" class="policy-section fade-up">
+          <h2 data-i18n="privacy-sec-9-title">問題與你的權利</h2>
+          <p data-i18n="privacy-sec-9-desc">KinCue 沒有帳號系統，也不會接收你的關係紀錄，因此你可以直接在裝置與 iCloud Drive 中刪除資料。如有隱私問題，請使用 KinCue App Store 頁面的「App 支援」連結。</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-copyright">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

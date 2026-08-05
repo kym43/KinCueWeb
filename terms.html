@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用條款 - KinCue</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-container {
+      padding: 160px 5% 100px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .policy-content {
+      width: 100%;
+    }
+    
+    .policy-hero {
+      margin-bottom: 60px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .eyebrow {
+      display: inline-block;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    
+    .policy-hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: var(--text-primary);
+      letter-spacing: -1px;
+    }
+    
+    .summary {
+      font-size: 18px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    
+    .effective-date {
+      color: var(--text-secondary);
+      font-size: 15px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .policy-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .policy-section {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 60px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .policy-section:last-child {
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-primary);
+    }
+    
+    .policy-section p {
+      color: var(--text-secondary);
+      font-size: 17px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .legal-container {
+        padding-top: 120px;
+      }
+      .policy-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0;
+      }
+      .policy-hero h1 {
+        font-size: 36px;
+      }
+      .policy-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing">方案比較</a>
+      <a href="versions.html" data-i18n="nav-versions">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="legal-container">
+    <article class="policy-content">
+      <header class="policy-hero fade-up">
+        <p class="eyebrow">Terms of Use</p>
+        <h1 data-i18n="terms-title">使用條款</h1>
+        <p class="summary" data-i18n="terms-summary">歡迎使用 KinCue！為了保障您的權益，請在開始使用本服務前，詳細閱讀以下使用條款。當您下載或使用 KinCue，即表示您已閱讀、瞭解並同意接受本條款之所有內容。</p>
+        <div class="effective-date" data-i18n="terms-effective-date">生效日期：2026 年 8 月 3 日</div>
+      </header>
+      <div class="policy-body">
+        <section id="section-1" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-1-title">1. 接受條款</h2>
+          <p data-i18n="terms-sec-1-desc">本使用條款構成您與 KinCue 開發團隊之間的合法協議。如果您不同意本條款的任何內容，請勿安裝或使用本應用程式。我們保留隨時修改本條款的權利，重大變更將透過 App 內通知或更新發布。</p>
+        </section>
+        <section id="section-2" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-2-title">2. 服務說明</h2>
+          <p data-i18n="terms-sec-2-desc">KinCue 是一款協助使用者記錄家庭關係與互動的軟體。我們致力於提供穩定的服務，但無法保證服務將免於中斷或完全無錯誤。我們保留隨時修改、暫停或終止服務（包含免費與付費功能）的權利。</p>
+        </section>
+        <section id="section-3" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-3-title">3. 訂閱與付款 (KinCue+)</h2>
+          <p data-i18n="terms-sec-3-desc">我們提供付費訂閱服務（KinCue+）。所有訂閱、付款處理、取消與退款皆透過 Apple App Store 進行。訂閱會在目前週期結束前自動續訂，除非您在設定中提前至少 24 小時取消。我們不處理亦無法存取您的信用卡資訊。</p>
+        </section>
+        <section id="section-4" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-4-title">4. 隱私權</h2>
+          <p data-i18n="terms-sec-4-desc">您的資料隱私對我們至關重要。關於我們如何處理您的個人資料（例如儲存於本機與 iCloud 的聯絡人資訊），請參閱我們的<a href="privacy.html">隱私權政策</a>。使用本服務即表示您同意該政策的規範。</p>
+        </section>
+        <section id="section-5" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-5-title">5. 智慧財產權</h2>
+          <p data-i18n="terms-sec-5-desc">KinCue 應用程式及其包含的所有內容、設計、程式碼與商標，其智慧財產權均歸本開發團隊所有。未經書面許可，您不得複製、修改、散布或對應用程式進行還原工程（Reverse Engineering）。</p>
+        </section>
+        <section id="section-6" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-6-title">6. 免責聲明</h2>
+          <p data-i18n="terms-sec-6-desc">本應用程式是依「現況」及「現有」基礎提供。我們不對 App 的適用性、可靠性或資料不遺失提供任何明示或暗示的保證。您需自行承擔使用本服務的風險，建議您定期將資料備份至 iCloud。</p>
+        </section>
+        <section id="section-7" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-7-title">7. 責任限制</h2>
+          <p data-i18n="terms-sec-7-desc">在法律允許的最大範圍內，對於因使用或無法使用本服務所導致的任何間接、附帶、特殊或衍生性損害（包含但不限於資料遺失或業務中斷），KinCue 概不負責。</p>
+        </section>
+        <section id="section-8" class="policy-section fade-up">
+          <h2 data-i18n="terms-sec-8-title">8. 聯絡我們</h2>
+          <p data-i18n="terms-sec-8-desc">如果您對本使用條款有任何疑問，或需要協助，請透過 App Store 頁面的「App 支援」或寄送電子郵件至 kincue.app@gmail.com 與我們聯繫。</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-copyright">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" class="active" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

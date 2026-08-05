@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinCue - 方案比較</title>
+  <meta name="description" content="KinCue 提供免費版與 KinCue+ 進階方案，選擇最適合您維繫家人感情的方式。">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing" class="active">方案比較</a>
+      <a href="versions.html" data-i18n="nav-versions">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section" style="padding-top: 150px; min-height: calc(100vh - 100px);">
+    <div class="pricing-header fade-up">
+      <h2 class="section-title" data-i18n="pricing-section-title" style="margin-bottom: 16px;">比較方案</h2>
+      <p class="pricing-subtitle" data-i18n="pricing-section-subtitle">查看免費版與 KinCue+ 各自包含的功能。</p>
+    </div>
+
+    <!-- Billing Toggle -->
+    <div class="billing-toggle-wrapper fade-up">
+      <span class="toggle-label active" id="label-monthly" data-i18n="billing-monthly">月繳</span>
+      <label class="switch">
+        <input type="checkbox" id="billing-checkbox">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label" id="label-yearly" data-i18n="billing-yearly">年繳</span>
+      <span class="save-badge" data-i18n="billing-save">省下 45%</span>
+    </div>
+    
+    <div class="pricing-container">
+      <div class="pricing-card fade-up">
+        <h3 class="pricing-title" data-i18n="pricing-free-title">免費版</h3>
+        <div class="pricing-price">
+          <span class="price-value" data-i18n="pricing-free-price">$0</span>
+          <span class="price-period" data-i18n="pricing-free-period">/ 永久</span>
+        </div>
+        <p class="pricing-desc" data-i18n="pricing-free-desc">適合開始建立家人互動習慣的您</p>
+        <a href="#" class="btn btn-glass pricing-btn" data-i18n="hero-download">在 App Store 下載</a>
+      </div>
+      
+      <div class="pricing-card premium fade-up">
+        <div class="premium-badge">KinCue+</div>
+        <h3 class="pricing-title" data-i18n="pricing-pro-title">KinCue+</h3>
+        <div class="pricing-price">
+          <span class="price-value" id="kincue-pro-price">$120</span>
+          <span class="price-period" id="kincue-pro-period" data-i18n="billing-month-period">/ 月</span>
+        </div>
+        <p class="pricing-desc" data-i18n="pricing-pro-desc">解鎖所有進階功能，更全面地維繫關係</p>
+        <a href="#" class="btn btn-primary pricing-btn" data-i18n="hero-download">在 App Store 下載</a>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="comparison-section fade-up">
+      <h3 class="comparison-title" data-i18n="comparison-title">功能比對列表</h3>
+      <div class="table-responsive">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="comp-feature">功能</th>
+              <th data-i18n="comp-free">免費版</th>
+              <th data-i18n="comp-pro" class="pro-header">KinCue+</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong data-i18n="feature-label-1">重要聯絡人</strong></td>
+              <td><span class="check">✓</span> <span data-i18n="pricing-free-f1">最多 4 位</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f1">不限人數</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="feature-label-2">聯絡提醒</strong></td>
+              <td><span class="check">✓</span> <span data-i18n="pricing-free-f2">基本聯絡提醒</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f2">日期、時段與後續提醒</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="feature-label-3">關係資訊</strong></td>
+              <td><span class="check">✓</span> <span data-i18n="pricing-free-f3">基本話題提示</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f3">喜好、重要日與自訂話題</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="feature-label-4">互動紀錄</strong></td>
+              <td><span class="check">✓</span> <span data-i18n="pricing-free-f4">查看、搜尋與篩選</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f4">查看、搜尋與篩選</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="feature-label-5">年度回顧</strong></td>
+              <td><span class="check">✓</span> <span data-i18n="pricing-free-f5">基本年度摘要</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f5">趨勢、跨年比較與分享</span></td>
+            </tr>
+            <tr>
+              <td><strong data-i18n="feature-label-6">回憶影片</strong></td>
+              <td><span class="cross">－</span></td>
+              <td class="pro-cell"><span class="check">✓</span> <span data-i18n="pricing-pro-f6">製作、儲存與分享</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-rights">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

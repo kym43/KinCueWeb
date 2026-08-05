@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KinCue - 專屬於家人的互動紀錄與回憶</title>
+  <meta name="description" content="KinCue 是一款專注於美感與體驗的家庭關係追蹤軟體，讓維繫家人感情不再是壓力，而是生活中的美好習慣。">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing">方案比較</a>
+      <a href="versions.html" data-i18n="nav-versions">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content fade-up">
+      <h1 class="hero-title" data-i18n="hero-title">最好的關係，<br>從記得每一次互動開始。</h1>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">KinCue 是一款專注於美感與體驗的家庭關係追蹤軟體，幫你記錄與家人的每一次通話、聚餐，並適時提醒你傳遞關心。</p>
+      
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" data-i18n="hero-download">在 App Store 下載</a>
+        <a href="#features" class="btn btn-glass" data-i18n="hero-learn-more">了解更多</a>
+      </div>
+    </div>
+    <div class="mockup-container fade-up">
+      <img id="img-hero-dashboard" src="assets/01_Dashboard.png" alt="KinCue Dashboard">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2 class="section-title fade-up" data-i18n="features-section-title">一趟增進家人關係的旅程</h2>
+    
+    <div class="features-list">
+      
+      <!-- Feature 1 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title" data-i18n="feature-1-title">關係儀表板，掌握每日節奏</h3>
+          <p class="feature-desc" data-i18n="feature-1-desc">一打開 App 就能看到「今日關係節奏」與「今日優先關心」，幫助你一眼看出今天該聯繫誰。將維繫家人感情變成輕鬆美好的日常習慣。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-dashboard" src="assets/feature_dashboard.png" alt="Dashboard Feature">
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">👤</div>
+          <h3 class="feature-title" data-i18n="feature-2-title">建立專屬人物誌，記住每個細節</h3>
+          <p class="feature-desc" data-i18n="feature-2-desc">不只是聯絡人名單。KinCue 讓你記錄家人的衣服尺寸、喜好食物、過敏原與送禮靈感，讓每一次送禮都送到心坎裡，展現最深刻的關心。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-preferences" src="assets/feature_preferences.png" alt="Preferences Feature">
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">💡</div>
+          <h3 class="feature-title" data-i18n="feature-3-title">話題靈感庫，告別無話可說的尷尬</h3>
+          <p class="feature-desc" data-i18n="feature-3-desc">太久沒聯絡不知道聊什麼？別擔心，豐富的話題靈感庫提供各種破冰話題（例如小時候的趣事、家庭傳統），幫助你輕鬆開口，深入了解家人的內心世界。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-topics" src="assets/feature_topics.png" alt="Topic Inspiration Feature">
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">📅</div>
+          <h3 class="feature-title" data-i18n="feature-4-title">記錄互動點滴與重要紀念日</h3>
+          <p class="feature-desc" data-i18n="feature-4-desc">除了記錄通話與碰面，還能寫下筆記。並設定結婚紀念日、退休紀念日或健康檢查等重要日子，KinCue 會提前提醒，讓你絕不漏接每一個重要時刻。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-anniversaries" src="assets/feature_anniversaries.png" alt="Interactions and Anniversaries Feature">
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">🎬</div>
+          <h3 class="feature-title" data-i18n="feature-5-title">專屬回憶相簿，一鍵生成影片</h3>
+          <p class="feature-desc" data-i18n="feature-5-desc">把照片與值得珍藏的時刻整理在一起。只要選取照片、挑選喜歡的主題（如溫暖、歡聚）與配樂，就能一鍵產生精美的回憶小短片，隨時重溫美好。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-memories" src="assets/feature_memories.png" alt="Memory Albums and Videos Feature">
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="feature-row fade-up">
+        <div class="feature-text">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title" data-i18n="feature-6-title">貼心設定，守護你的隱私與作息</h3>
+          <p class="feature-desc" data-i18n="feature-6-desc">設定「適合聯絡的時段」，確保不打擾家人的休息時間；支援 iCloud 安全備份與 Face ID 鎖定，讓你的家庭記憶安全無虞，充滿安心感。</p>
+        </div>
+        <div class="feature-image">
+          <img id="img-feature-settings" src="assets/feature_settings.png" alt="Settings and Privacy Feature">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-rights">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
