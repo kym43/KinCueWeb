@@ -564,6 +564,15 @@ body {
 .comparison-table .pro-cell {
   background: linear-gradient(90deg, rgba(253, 107, 76, 0.03) 0%, rgba(253, 107, 76, 0.05) 100%);
 }
+.comparison-table .category-row td {
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--accent-color);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 24px;
+}
 .comparison-table .check {
   color: var(--accent-color);
   font-weight: 700;
