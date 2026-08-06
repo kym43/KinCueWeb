@@ -23,12 +23,15 @@
   box-sizing: border-box;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -667,7 +670,7 @@ body {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -250px;
     width: 250px;
     height: 100vh;
     background: rgba(13, 13, 18, 0.95);
