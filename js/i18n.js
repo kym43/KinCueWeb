@@ -183,6 +183,10 @@ const translations = {
 
     // Versions
     'versions-section-title': '版本資訊',
+    'version-1-0-1-title': '版本 1.0.1',
+    'version-1-0-1-date': '2026年8月',
+    'version-1-0-1-feat-1': '優化聯絡人卡片與桌面小工具的資訊呈現',
+    'version-1-0-1-feat-2': '修正 KinCue+ 訂閱權益顯示問題',
     'version-1-title': '版本 1.0.0',
     'version-1-date': '2026年8月',
     'version-1-desc': 'KinCue 正式上線！包含互動時間軸、關心提醒以及桌面小工具等核心功能，幫助您與家人保持緊密聯繫。',
@@ -371,6 +375,10 @@ const translations = {
 
     // Versions
     'versions-section-title': 'Release Notes',
+    'version-1-0-1-title': 'Version 1.0.1',
+    'version-1-0-1-date': 'August 2026',
+    'version-1-0-1-feat-1': 'Optimized information display on contact cards and home screen widgets.',
+    'version-1-0-1-feat-2': 'Fixed KinCue+ subscription benefits display issues.',
     'version-1-title': 'Version 1.0.0',
     'version-1-date': 'August 2026',
     'version-1-desc': 'KinCue is officially live! Includes core features like interaction timelines, gentle reminders, and home screen widgets to help you stay close to your family.',
