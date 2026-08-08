@@ -393,6 +393,7 @@ class I18n {
     this.updateContent();
     this.updateSwitcherUI();
     this.updateImages();
+    this.updateLinks();
   }
 
   setLanguage(lang) {
@@ -402,6 +403,7 @@ class I18n {
     this.updateContent();
     this.updateSwitcherUI();
     this.updateImages();
+    this.updateLinks();
     document.documentElement.lang = lang;
   }
 
@@ -422,6 +424,16 @@ class I18n {
         img.src = `assets/${basename}${suffix}.png`;
       }
     }
+  }
+
+  updateLinks() {
+    const downloadLinks = document.querySelectorAll('a[data-i18n="hero-download"]');
+    const appStoreUrl = this.lang === 'en' 
+      ? 'https://apps.apple.com/tw/app/kincue-keep-in-touch/id6795072619?l=en-GB'
+      : 'https://apps.apple.com/tw/app/kincue-keep-in-touch/id6795072619';
+    downloadLinks.forEach(link => {
+      link.href = appStoreUrl;
+    });
   }
 
   updateContent() {
