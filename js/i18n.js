@@ -183,6 +183,11 @@ const translations = {
 
     // Versions
     'versions-section-title': '版本資訊',
+    'version-1-0-2-title': '版本 1.0.2',
+    'version-1-0-2-date': '2026年8月',
+    'version-1-0-2-feat-1': '功能增強：優化「智慧提醒」邏輯，現在能更聰明地處理特定節日（如母親節、父親節）並合併相關提醒，提供更貼心的互動建議（Plus 專屬）。',
+    'version-1-0-2-feat-2': '穩定性提升：強化 iCloud 備份與同步機制，改善網路延遲時的讀取穩定性，確保您的珍貴回憶安全無虞。',
+    'version-1-0-2-feat-3': '介面優化：在「設定」中新增智慧提醒的偏好選項，並完成各項細節與多國語系的更新。',
     'version-1-0-1-title': '版本 1.0.1',
     'version-1-0-1-date': '2026年8月',
     'version-1-0-1-feat-1': '優化聯絡人卡片與桌面小工具的資訊呈現',
@@ -375,6 +380,11 @@ const translations = {
 
     // Versions
     'versions-section-title': 'Release Notes',
+    'version-1-0-2-title': 'Version 1.0.2',
+    'version-1-0-2-date': 'August 2026',
+    'version-1-0-2-feat-1': 'Enhanced Features: Upgraded "Smart Reminders" logic to intelligently handle specific holidays and merge related events for better interaction suggestions (Exclusive to Plus).',
+    'version-1-0-2-feat-2': 'Improved Stability: Strengthened iCloud backup and synchronization mechanisms to ensure better reliability during network latency, keeping your precious memories safe.',
+    'version-1-0-2-feat-3': 'UI Enhancements: Added new preference options for Smart Reminders in Settings, along with minor bug fixes and localization updates.',
     'version-1-0-1-title': 'Version 1.0.1',
     'version-1-0-1-date': 'August 2026',
     'version-1-0-1-feat-1': 'Optimized information display on contact cards and home screen widgets.',
