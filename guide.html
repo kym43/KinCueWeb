@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="g-meta-title">KinCue - 使用手冊</title>
+  <meta name="description" data-i18n-content="g-meta-desc" content="KinCue 1.1.0 使用手冊，帶你認識首頁、聯絡人管理、互動紀錄、提醒通知、日曆、年度回顧與 KinCue+ 進階功能。">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-glow"></div>
+  <div class="bg-glow bg-glow-right"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="KinCue Logo">
+      KinCue
+    </a>
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <div class="nav-links">
+      <a href="index.html#features" data-i18n="nav-features">功能特色</a>
+      <a href="pricing.html" data-i18n="nav-pricing">方案比較</a>
+      <a href="guide.html" data-i18n="nav-guide" class="active">使用手冊</a>
+      <a href="versions.html" data-i18n="nav-versions">版本資訊</a>
+      <a href="mailto:kincue.app@gmail.com" data-i18n="nav-contact">聯絡客服</a>
+      <a href="privacy.html" data-i18n="nav-privacy">隱私權政策</a>
+      <div class="lang-switcher">
+        <button data-lang="zh-TW" class="active">中文</button>
+        <button data-lang="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Guide Hero -->
+  <section class="guide-hero fade-up">
+    <span class="guide-eyebrow">User Guide · v1.1.0</span>
+    <h1 data-i18n="g-h1">KinCue 使用手冊</h1>
+    <p data-i18n="g-intro">這是一本簡單直覺的行動說明書，陪你認識想要記得的人。本文件依 KinCue 1.1.0 整理，涵蓋所有主要功能的使用方式，並標示哪些功能免費即可使用、哪些屬於 KinCue+ 訂閱專屬。</p>
+    <div class="guide-legend">
+      <span class="tag-free" data-i18n="g-tag-free">免費版</span>
+      <span class="tag-plus" data-i18n="g-tag-plus">KinCue+ 專屬</span>
+    </div>
+  </section>
+
+  <div class="guide-layout">
+    <!-- Sidebar TOC -->
+    <nav class="guide-sidebar fade-up" id="guide-sidebar">
+      <a href="#about"><span class="toc-num">1</span><span data-i18n="g-toc-1">關於 KinCue</span></a>
+      <a href="#compare"><span class="toc-num">2</span><span data-i18n="g-toc-2">免費版 vs KinCue+ 總覽</span></a>
+      <a href="#onboarding"><span class="toc-num">3</span><span data-i18n="g-toc-3">初次啟動與導覽</span></a>
+      <a href="#home"><span class="toc-num">4</span><span data-i18n="g-toc-4">首頁：今日誰該聯繫</span></a>
+      <a href="#contacts"><span class="toc-num">5</span><span data-i18n="g-toc-5">聯絡人管理</span></a>
+      <a href="#interactions"><span class="toc-num">6</span><span data-i18n="g-toc-6">記錄互動</span></a>
+      <a href="#reminders"><span class="toc-num">7</span><span data-i18n="g-toc-7">提醒與通知</span></a>
+      <a href="#enrichment"><span class="toc-num">8</span><span data-i18n="g-toc-8">更懂對方（KinCue+）</span></a>
+      <a href="#memories"><span class="toc-num">9</span><span data-i18n="g-toc-9">珍藏回憶：相簿與影片</span></a>
+      <a href="#calendar"><span class="toc-num">10</span><span data-i18n="g-toc-10">日曆：月、週檢視與統計</span></a>
+      <a href="#yearreview"><span class="toc-num">11</span><span data-i18n="g-toc-11">年度回顧</span></a>
+      <a href="#widget"><span class="toc-num">12</span><span data-i18n="g-toc-13">主畫面小工具與 Siri</span></a>
+      <a href="#settings"><span class="toc-num">13</span><span data-i18n="g-toc-14">設定</span></a>
+      <a href="#subscription"><span class="toc-num">14</span><span data-i18n="g-toc-15">KinCue+ 訂閱方案</span></a>
+      <a href="#privacy"><span class="toc-num">15</span><span data-i18n="g-toc-16">隱私與資料安全</span></a>
+    </nav>
+
+    <div class="guide-sections">
+
+    <!-- 1. About -->
+    <section id="about" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">1</div>
+        <h2 data-i18n="g-s1-h2">關於 KinCue</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text" style="max-width: 720px;">
+          <p data-i18n="g-s1-p1">KinCue 是一款幫助你和父母、家人保持聯繫的 iOS App。核心概念很單純：把每一次電話、聚餐、視訊或訊息記錄下來，KinCue 提供你自行設定的聯絡週期，在適當的時間溫柔提醒你該聯繫誰了。</p>
+          <p data-i18n="g-s1-p2"><strong>KinCue 不需要註冊帳戶</strong>，所有聯絡人資料與互動紀錄都只儲存在你的裝置上，只有在你主動開啟「備份」時，資料才會寫入你自己的私人 iCloud 空間。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Compare -->
+    <section id="compare" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">2</div>
+        <h2 data-i18n="g-s2-h2">免費版 vs KinCue+ 功能總覽</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s2-intro">想快速比較，App 內「設定 → KinCue+ → 訂閱方案」也有一張表，並提供依你目前方案即時反白。</p>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th data-i18n="g-s2-th1">功能</th>
+                  <th data-i18n="g-s2-th2">免費版</th>
+                  <th class="pro-header" data-i18n="g-s2-th3">KinCue+</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="g-s2-r1-feat">重要聯絡人數量</td><td data-i18n="g-s2-r1-free">最多 4 位</td><td class="pro-cell" data-i18n="g-s2-r1-pro">不限人數</td></tr>
+                <tr><td data-i18n="g-s2-r2-feat">聯絡週期</td><td data-i18n="g-s2-r2-free">基本聯絡週期與提醒</td><td class="pro-cell" data-i18n="g-s2-r2-pro">偏好聯絡時段、需紀念日期、聯絡後追蹤、智慧合併提醒</td></tr>
+                <tr><td data-i18n="g-s2-r3-feat">互動紀錄（時間線）</td><td><span class="check">✓</span> <span data-i18n="g-s2-r3-free">查看、新增、篩選</span></td><td class="pro-cell"><span class="check">✓</span> <span data-i18n="g-s2-r3-pro">與免費版相同</span></td></tr>
+                <tr><td data-i18n="g-s2-r4-feat">更懂對方（偏好、禮物、話題）</td><td data-i18n="g-s2-r4-free">基本聊天話題提示</td><td class="pro-cell" data-i18n="g-s2-r4-pro">完整開放</td></tr>
+                <tr><td data-i18n="g-s2-r5-feat">回憶相簿 / 回憶影片</td><td data-i18n="g-s2-r5-free">相簿可用</td><td class="pro-cell" data-i18n="g-s2-r5-pro">可製作、儲存並分享回憶影片</td></tr>
+                <tr><td data-i18n="g-s2-r6-feat">日曆檢視</td><td data-i18n="g-s2-r6-free">月、週、日檢視及篩選</td><td class="pro-cell" data-i18n="g-s2-r6-pro">同左，並多一組完整統計</td></tr>
+                <tr><td data-i18n="g-s2-r7-feat">年度回顧</td><td data-i18n="g-s2-r7-free">基本年度互動次數統計</td><td class="pro-cell" data-i18n="g-s2-r7-pro">趨勢圖表、跨年比較、精彩時刻、分享</td></tr>
+                <tr><td data-i18n="g-s2-r9-feat">iCloud 備份、Widget、Siri 捷徑</td><td><span class="check">✓</span> <span data-i18n="g-s2-r9-free">皆可使用</span></td><td class="pro-cell"><span class="check">✓</span> <span data-i18n="g-s2-r9-pro">皆可使用</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="guide-note" data-i18n="g-s2-note">想快速比較？App 首頁 →「設定」→「KinCue+」→「訂閱方案」也有同一張表，並提供你目前方案的即時對照。</div>
+    </section>
+
+    <!-- 3. Onboarding -->
+    <section id="onboarding" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">3</div>
+        <h2 data-i18n="g-s3-h2">初次啟動與導覽</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s3-p1">第一次開啟 KinCue 時，App 會用幾個畫面快速說明它能幫你做什麼，並依你的節奏完成互動，同時在最後詢問是否允許通知（這樣才能在合適的時機提醒你）。導覽尾聲也會用一張表格，讓你搞清楚免費版與 KinCue+ 差在哪裡——決定要不要訂閱，你也可以選擇「掃過不看」，之後隨時可以在設定裡再訂閱。</p>
+        </div>
+        <div class="guide-media">
+          <figure><img src="assets/guide/07-onboarding-plan-comparison.webp" data-i18n-src="07-onboarding-plan-comparison" alt="初次啟動的免費版、KinCue+ 方案比較頁" data-i18n-alt="g-img-07-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-07">方案比較頁</figcaption></figure>
+        </div>
+      </div>
+      <div class="guide-note"><strong data-i18n="g-label-free">免費版：</strong><span data-i18n="g-s3-note">完整導覽流程皆可使用。</span></div>
+    </section>
+
+    <!-- 4. Home -->
+    <section id="home" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">4</div>
+        <h2 data-i18n="g-s4-h2">首頁：今日誰該聯繫</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s4-p1">首頁是 KinCue 的預設起點，上方是「今日關係節奏」卡片，用待聯絡、快到了、已更新等數字，讓你一眼看出今天該聯繫誰；下方則是完整聯絡人清單（可依「所有聯絡人」「待聯絡」篩選，並快速切換聯絡週期）。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/01-home.webp" data-i18n-src="01-home" alt="首頁畫面" data-i18n-alt="g-img-01-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-01">首頁畫面</figcaption></figure>
+        </div>
+      </div>
+      <div class="guide-note"><strong data-i18n="g-label-free">免費版：</strong><span data-i18n="g-s4-note">首頁完整功能可使用（最多顯示 4 位聯絡人的節奏總覽）。</span></div>
+    </section>
+
+    <!-- 5. Contacts -->
+    <section id="contacts" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">5</div>
+        <h2 data-i18n="g-s5-h2">聯絡人管理</h2>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s5-h3-1">新增聯絡人</h3>
+          <p data-i18n="g-s5-p1">點選首頁右上角的「新增」，輸入姓名、選擇稱謂（媽媽、姐姐、好友……或自訂），可選填電話、訊息收件人、生日與聯絡週期（預設可輸入 1～365 天）。也能直接從手機通訊錄選取聯絡人資料。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/05-add-contact.webp" data-i18n-src="05-add-contact" alt="新增聯絡人畫面" data-i18n-alt="g-img-05-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-05">新增聯絡人</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s5-h3-2">聯絡人詳細頁</h3>
+          <p data-i18n="g-s5-p2">點進任一位聯絡人，會看到基本資料，以及以植物生長比喻呈現的「關係健康度」（例如「枝葉茂盛．連結成長狀態」），下方並列出距上次聯繫天數、提醒週期與互動紀錄筆數。往下可以查看話題提示、互動時間線紀錄，以及「更懂對方」「分享回憶」「同步社群」等擴充功能卡片。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/04-contact-detail.webp" data-i18n-src="04-contact-detail" alt="聯絡人詳細頁" data-i18n-alt="g-img-04-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-04">聯絡人詳細頁</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s5-h3-3">免費版人數上限</h3>
+          <p data-i18n="g-s5-p3">免費版最多可加入 <strong>4 位</strong>重要聯絡人。加入第 5 位時，App 會直接引導至 KinCue+ 升級頁面，說明「不限人數，只有你最需要的人」。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/24-contact-limit-paywall.webp" data-i18n-src="24-contact-limit-paywall" alt="免費版第 5 位聯絡人的升級提示" data-i18n-alt="g-img-24-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-24">免費版第 5 位聯絡人的升級提示</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s5-cmp-free">新增、編輯、刪除聯絡人皆可使用（上限 <strong>4 位</strong>）。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s5-cmp-plus">解除人數限制，可加入所有你在乎的人。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Interactions -->
+    <section id="interactions" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">6</div>
+        <h2 data-i18n="g-s6-h2">記錄互動</h2>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s6-h3-1">新增互動</h3>
+          <p data-i18n="g-s6-p1">在聯絡人詳細頁點「記錄互動」，選擇方式（電話、FaceTime 視訊/語音、實體見面、訊息……），填寫發生時間、結果與備註，也能加入其他家人共同參與。若是接聽或撥打電話，也可以用「快速記錄」，一鍵新增一筆 15 分鐘電話紀錄，不用手動填完整表單。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/08-add-interaction.webp" data-i18n-src="08-add-interaction" alt="新增互動畫面" data-i18n-alt="g-img-08-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-08">新增互動</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s6-h3-2">互動時間線與篩選</h3>
+          <p data-i18n="g-s6-p2">每位聯絡人都有專屬的「互動時間線」，提供時間排序的完整紀錄，並支援依方式、日期範圍、聯繫方式、備註關鍵字篩選，以及分組（依年份、依月分）排序。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/09-interaction-timeline.webp" data-i18n-src="09-interaction-timeline" alt="互動時間線" data-i18n-alt="g-img-09-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-09">互動時間線</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s6-cmp-free">新增、編輯、刪除互動紀錄，以及時間線的查看、搜尋、排序與篩選皆可使用（與 KinCue+ 相同）。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s6-cmp-plus">完整開放，與免費版相同。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Reminders -->
+    <section id="reminders" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">7</div>
+        <h2 data-i18n="g-s7-h2">提醒與通知</h2>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s7-h3-1">基本聯絡提醒（免費）</h3>
+          <p data-i18n="g-s7-p1">為每位聯絡人設定「聯絡週期」（例如每 7 天），KinCue 會透過本機通知，在週期到期時當天提醒你「該聯絡了」。系統也預先建立好子女篇、夫妻篇、父母篇的參考週期。</p>
+        </div>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s7-h3-2">進階提醒（KinCue+）</h3>
+          <p data-i18n="g-s7-p2">設定 →「KinCue+」→「進階提醒（適合聯絡的時段）」可以：</p>
+          <ul>
+            <li data-i18n="g-s7-li1">設定「偏好聯絡時段」，只在指定的幾天或時段內收到提醒，避免打擾對方休息或早自習期間。</li>
+            <li data-i18n="g-s7-li2">啟用「智慧合併」，自動合併 7 天內多筆待處理提醒，避免過度打擾。</li>
+            <li data-i18n="g-s7-li3">收到「需紀念日提醒」（結婚紀念日、健康檢查等，來自「更懂對方」中設定的重要日子）。</li>
+            <li data-i18n="g-s7-li4">收到「聯絡後提醒」，在錯過設定電話後，主動詢問要不要改天再聯絡。</li>
+          </ul>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/17-reminder-time-plus.webp" data-i18n-src="17-reminder-time-plus" alt="KinCue+ 的進階提醒設定頁" data-i18n-alt="g-img-17-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-17">進階提醒設定頁</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s7-p3">免費版點選進階入口，會直接看到升級提示：</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/18-reminder-time-paywall.webp" data-i18n-src="18-reminder-time-paywall" alt="免費版點選進階提醒時出現的升級頁" data-i18n-alt="g-img-18-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-18">免費版升級提示</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s7-cmp-free">聯絡週期提醒（子女篇、夫妻篇、父母篇）。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s7-cmp-plus">偏好聯絡時段、智慧合併提醒、需紀念日提醒、聯絡後提醒。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Enrichment -->
+    <section id="enrichment" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">8</div>
+        <h2 data-i18n="g-s8-h2">更懂對方（KinCue+）</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s8-p1">在聯絡人詳細頁往下滑，會看到「更懂對方」卡片，用來記住那些讓關心更貼心的小細節：</p>
+          <ul>
+            <li data-i18n="g-s8-li1"><strong>偏好與送禮靈感</strong>：衣服尺寸、偏好食物、心心念念的東西、興趣、送禮靈感。</li>
+            <li data-i18n="g-s8-li2"><strong>需紀念日</strong>：結婚紀念日、健康檢查等（可設定每年重複與提前提醒天數）。</li>
+            <li data-i18n="g-s8-li3"><strong>話題聊天庫</strong>：建立聊天庫，可自訂話題數量（聊天內容、最近聊過、常聊話題）。</li>
+          </ul>
+          <p data-i18n="g-s8-p2">免費版只看得到基本的預設話題提示，並在卡片下方看到升級推廣；KinCue+ 用戶則可以完整編輯這一張卡片。</p>
+        </div>
+      </div>
+      <div class="guide-media" style="margin-top: 24px;">
+        <figure><img src="assets/guide/10-profile-enrichment-locked-free.webp" data-i18n-src="10-profile-enrichment-locked-free" alt="免費版的「更懂對方」鎖定卡片" data-i18n-alt="g-img-10-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-10">免費版（鎖定）</figcaption></figure>
+        <figure><img src="assets/guide/11-profile-enrichment-unlocked-plus.webp" data-i18n-src="11-profile-enrichment-unlocked-plus" alt="KinCue+ 解鎖後的「更懂對方」卡片" data-i18n-alt="g-img-11-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-11">KinCue+（解鎖）</figcaption></figure>
+      </div>
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s8-cmp-free">僅顯示基本聊天話題提示。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s8-cmp-plus">完整開放偏好與送禮靈感、需紀念日、自訂話題聊天庫。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Memories -->
+    <section id="memories" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">9</div>
+        <h2 data-i18n="g-s9-h2">珍藏回憶：相簿與回憶影片</h2>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s9-h3-1">回憶相簿（免費）</h3>
+          <p data-i18n="g-s9-p1">在互動紀錄中加入照片後，KinCue 會自動整理成該聯絡人的回憶相簿，也可以手動調整相簿名稱、封面與收錄的照片。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/12-memory-gallery.webp" data-i18n-src="12-memory-gallery" alt="回憶相簿" data-i18n-alt="g-img-12-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-12">回憶相簿</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s9-h3-2">回憶影片（KinCue+）</h3>
+          <p data-i18n="g-s9-p2">在相簿中點選「製作回憶影片」，最多選擇 15 張照片，選擇主題（溫馨、歡樂、感謝、寧靜）與背景音樂，KinCue 會自動產生一段有轉場效果與文字的短影片，可在影片庫中播放、收藏，並直接儲存到手機分享給家人。影片與音樂皆完全在裝置上產生，不會上傳任何家庭隱私。</p>
+        </div>
+      </div>
+
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s9-cmp-free">回憶相簿的整理、瀏覽、編輯皆可使用。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s9-cmp-plus">製作、儲存並分享回憶影片。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Calendar -->
+    <section id="calendar" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">10</div>
+        <h2 data-i18n="g-s10-h2">日曆：月、週檢視與統計</h2>
+      </div>
+
+      <div class="guide-block" style="margin-bottom: 48px;">
+        <div class="guide-text">
+          <p data-i18n="g-s10-p1">日曆分頁可切換月檢視或週檢視，顯示每天的互動紀錄與未來排程，例如即將到期的聯絡週期。點擊日期可直接查看當天新增的互動。</p>
+        </div>
+        <div class="guide-media">
+          <figure><img src="assets/guide/02-calendar-month.webp" data-i18n-src="02-calendar-month" alt="日曆月檢視" data-i18n-alt="g-img-02-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-02">月檢視</figcaption></figure>
+          <figure><img src="assets/guide/15-calendar-week-view.webp" data-i18n-src="15-calendar-week-view" alt="日曆週檢視（免費版即可使用）" data-i18n-alt="g-img-15-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-15">週檢視（免費版即可使用）</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-block">
+        <div class="guide-text">
+          <h3 style="font-size: 20px; margin-bottom: 12px;" data-i18n="g-s10-h3">KinCue+ 統計面板</h3>
+          <p data-i18n="g-s10-p2">KinCue+ 用戶在日曆右上角會多一組統計指標按鈕，點選可看到「互動總次數」「已聯繫人數」「最常聯繫的人」與依聯繫方式分佈等更完整洞察。</p>
+        </div>
+        <div class="guide-media single">
+          <figure><img src="assets/guide/16-calendar-stats-plus.webp" data-i18n-src="16-calendar-stats-plus" alt="KinCue+ 的日曆統計頁" data-i18n-alt="g-img-16-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-16">日曆統計頁</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s10-cmp-free">月檢視、週檢視、日檢視皆可使用。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s10-cmp-plus">新增完整統計與洞察（互動總覽、常聯繫對象、聯繫方式分佈）。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Year Review -->
+    <section id="yearreview" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">11</div>
+        <h2 data-i18n="g-s11-h2">年度回顧</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s11-p1">在聯絡人詳細頁點「年度回顧」，可依年份切換，查看與這個人一整年的互動統計。免費版只看得到基本的年度互動次數統計，並附上一個「解鎖完整年度回顧」的按鈕；KinCue+ 用戶則能解鎖完整年度數據，包含每月互動趨勢圖、跟去年的比較、最常聯繫方式、成長里程碑等年度亮點，以及最近的珍貴時光與時間線，還能選擇要分享哪些內容，做成年份回顧分享出去。</p>
+        </div>
+      </div>
+      <div class="guide-media" style="margin-top: 24px;">
+        <figure><img src="assets/guide/13-year-review-current.webp" data-i18n-src="13-year-review-current" alt="免費版基本年度互動摘要" data-i18n-alt="g-img-13-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-13">免費版（基本摘要）</figcaption></figure>
+        <figure><img src="assets/guide/14-year-review-historical.webp" data-i18n-src="14-year-review-historical" alt="KinCue+ 完整年度回顧數據" data-i18n-alt="g-img-14-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-14">KinCue+（完整數據）</figcaption></figure>
+      </div>
+      <div class="guide-compare">
+        <div class="compare-card">
+          <div class="compare-label" data-i18n="g-tag-free">免費版</div>
+          <p data-i18n="g-s11-cmp-free">基本年度互動次數統計。</p>
+        </div>
+        <div class="compare-card plus">
+          <div class="compare-label">KinCue+</div>
+          <p data-i18n="g-s11-cmp-plus">趨勢圖表、跨年比較、年度亮點、時間線與分享。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Widget -->
+    <section id="widget" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">12</div>
+        <h2 data-i18n="g-s13-h2">主畫面小工具與 Siri 捷徑</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <ul>
+            <li data-i18n="g-s13-li1"><strong>主畫面小工具</strong>：加到主畫面後顯示「今日誰該聯繫」——待聯繫的人數與一位該聯繫的對象，並提供「聯絡」「記錄」快速鍵。</li>
+            <li data-i18n="g-s13-li2"><strong>Siri 捷徑 / App Intents</strong>：可透過「新增互動紀錄」捷徑，直接對 Siri 說出對象與聯繫方式，免開 App 也能記錄一筆互動。</li>
+          </ul>
+          <p><strong data-i18n="g-label-free">免費版：</strong><span data-i18n="g-s13-note">小工具與 Siri 捷徑皆可使用，不受 KinCue+ 限制。</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Settings -->
+    <section id="settings" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">13</div>
+        <h2 data-i18n="g-s14-h2">設定</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s14-p1">點選底部「設定」分頁，可以管理以下項目：</p>
+          <ul>
+            <li data-i18n="g-s14-li1"><strong>App 語言 / App 外觀</strong>：語言與深色／淺色／跟隨系統，設定後立即套用。</li>
+            <li data-i18n="g-s14-li2"><strong>iCloud 備份</strong>：手動將聯絡人與互動紀錄備份到你自己的私人 iCloud（iCloud Drive/KinCue/KinCue Backup），也可從備份還原到新裝置。備份與還原都需要在系統設定中登入 iCloud。</li>
+            <li data-i18n="g-s14-li3"><strong>隱私與資料</strong>：閱讀完整隱私權政策，說明資料只存在裝置上，只有你主動備份才會進入 iCloud。</li>
+            <li data-i18n="g-s14-li4"><strong>支援與回饋</strong>：一鍵寄信回報問題或建議，會自動帶入 App 版本、iOS 版本與裝置等診斷資訊。</li>
+            <li data-i18n="g-s14-li5"><strong>KinCue+</strong>：查看目前訂閱狀態、比較方案、訂閱或管理訂閱（見下一節）。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="guide-media" style="margin-top: 24px;">
+        <figure><img src="assets/guide/03-settings.webp" data-i18n-src="03-settings" alt="設定頁面" data-i18n-alt="g-img-03-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-03">設定頁面</figcaption></figure>
+        <figure><img src="assets/guide/23-icloud-backup.webp" data-i18n-src="23-icloud-backup" alt="iCloud 備份設定" data-i18n-alt="g-img-23-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-23">iCloud 備份設定</figcaption></figure>
+      </div>
+      <div class="guide-note"><strong data-i18n="g-label-free">免費版：</strong><span data-i18n="g-s14-note">以上設定項目皆可使用，差別僅在「進階提醒」等入口點選後會顯示升級頁，而非開啟實際設定畫面。</span></div>
+    </section>
+
+    <!-- 14. Subscription -->
+    <section id="subscription" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">14</div>
+        <h2 data-i18n="g-s15-h2">KinCue+ 訂閱方案</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text">
+          <p data-i18n="g-s15-p1">在「設定 → KinCue+」或任何升級提示畫面，都可以進入訂閱中心：</p>
+          <ul>
+            <li data-i18n="g-s15-li1">提供<strong>月訂閱</strong>與<strong>年訂閱</strong>兩種方案，年訂閱通常較划算（App 會標示折扣、每月換算單價），符合資格的新訂閱也可享免費試用。</li>
+            <li data-i18n="g-s15-li3">已訂閱的帳號會顯示「此 Apple 帳號已訂閱 KinCue+」，並提供「管理訂閱」直接連到 App Store 訂閱設定。</li>
+            <li data-i18n="g-s15-li4">提供「恢復購買」，換裝置或重新安裝後可一鍵找回並恢復訂閱。</li>
+            <li data-i18n="g-s15-li5">訂閱由 Apple 帳號收款，除非在當前訂閱期結束前至少 24 小時取消，否則會自動續訂。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="guide-media" style="margin-top: 24px;">
+        <figure><img src="assets/guide/21-subscription-compare-free.webp" data-i18n-src="21-subscription-compare-free" alt="訂閱中心（免費版）" data-i18n-alt="g-img-21-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-21">訂閱中心（免費版）</figcaption></figure>
+        <figure><img src="assets/guide/22-subscription-compare-plus.webp" data-i18n-src="22-subscription-compare-plus" alt="訂閱中心（KinCue+ 已訂閱）" data-i18n-alt="g-img-22-alt" width="520" height="1130" loading="lazy"><figcaption data-i18n="g-cap-22">訂閱中心（KinCue+ 已訂閱）</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 15. Privacy -->
+    <section id="privacy" class="guide-section fade-up">
+      <div class="guide-section-header">
+        <div class="guide-section-num">15</div>
+        <h2 data-i18n="g-s16-h2">隱私與資料安全</h2>
+      </div>
+      <div class="guide-block">
+        <div class="guide-text" style="max-width: 720px;">
+          <ul>
+            <li data-i18n="g-s16-li1">KinCue 不需要帳戶即可使用，聯絡人資料、互動紀錄、照片都只存在你的裝置上。</li>
+            <li data-i18n="g-s16-li2">只有在你主動開啟「備份」時，資料才會寫入你自己 Apple 帳號的私人 iCloud 空間，KinCue 不會在任何其他伺服器保留副本。</li>
+            <li data-i18n="g-s16-li3">訂閱購買與付款由 Apple 處理，KinCue 只會取得訂閱狀態與已驗證的訂閱期間。</li>
+            <li data-i18n="g-s16-li4">正式版使用 Firebase Analytics、Crashlytics 做匿名使用統計與當機診斷，不會將你的姓名、聯絡人、備註、照片等隱私資料連結，也不會用於廣告或跨 App 追蹤。</li>
+            <li data-i18n="g-s16-li5">KinCue 不會販售或分享你的個人資料，也不會顯示第三方廣告。</li>
+          </ul>
+          <p data-i18n="g-s16-p1">完整條款請見 App 內「設定 → 隱私與資料 → 隱私權政策」，或網站的 <a href="privacy.html" style="color: var(--accent-color);">隱私權政策</a> 頁面。</p>
+        </div>
+      </div>
+    </section>
+
+    </div>
+  </div>
+
+  <p class="guide-footnote" data-i18n="g-footnote">本文件內容為 KinCue 1.1.0 的繁體中文介面所寫，實際畫面可能依系統版本而有些微差異。</p>
+
+  <!-- Footer -->
+  <footer class="footer fade-up">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="KinCue Logo">
+        <div>
+          <h3>KinCue</h3>
+          <p data-i18n="footer-rights">© 2026 KinCue. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:kincue.app@gmail.com" data-i18n="footer-support">客服支援</a>
+        <a href="terms.html" data-i18n="footer-terms">使用條款</a>
+        <a href="privacy.html" data-i18n="footer-privacy">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Sidebar scrollspy: highlight the TOC link for the section in view
+    (function () {
+      const sidebarLinks = document.querySelectorAll('#guide-sidebar a');
+      const sections = document.querySelectorAll('.guide-section[id]');
+      if (!sidebarLinks.length || !sections.length) return;
+
+      const linkByHash = {};
+      sidebarLinks.forEach(link => { linkByHash[link.getAttribute('href')] = link; });
+
+      const setActive = (id) => {
+        sidebarLinks.forEach(link => link.classList.remove('active'));
+        const active = linkByHash['#' + id];
+        if (active) active.classList.add('active');
+      };
+
+      const spy = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      }, { rootMargin: '-110px 0px -70% 0px', threshold: 0 });
+
+      sections.forEach(section => spy.observe(section));
+    })();
+  </script>
+</body>
+</html>

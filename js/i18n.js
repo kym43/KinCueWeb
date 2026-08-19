@@ -3,6 +3,7 @@ const translations = {
     // Navbar
     'nav-features': '功能特色',
     'nav-pricing': '方案比較',
+    'nav-guide': '使用手冊',
     'nav-versions': '版本資訊',
     'nav-contact': '聯絡客服',
     'nav-privacy': '隱私權政策',
@@ -32,7 +33,7 @@ const translations = {
     'feature-5-desc': '專屬的統計面板為您分析互動次數、最常聯繫排行榜及聯繫方式分佈。幫助您看懂自己的聯繫節奏，更聰明地維繫家人感情。',
 
     'feature-6-title': '貼心設定，守護你的隱私與作息',
-    'feature-6-desc': '設定「適合聯絡的時段」，確保不打擾家人的休息時間；支援 iCloud 安全備份與 Face ID 鎖定，讓你的家庭記憶安全無虞，充滿安心感。',
+    'feature-6-desc': '設定「適合聯絡的時段」，確保不打擾家人的休息時間；支援 iCloud 安全備份，讓你的家庭記憶安全無虞，充滿安心感。',
 
     // Pricing
     'pricing-section-title': '比較方案',
@@ -213,6 +214,7 @@ const translations = {
     // Navbar
     'nav-features': 'Features',
     'nav-pricing': 'Pricing',
+    'nav-guide': 'User Guide',
     'nav-versions': 'Release Notes',
     'nav-contact': 'Support',
     'nav-privacy': 'Privacy Policy',
@@ -242,7 +244,7 @@ const translations = {
     'feature-5-desc': 'An exclusive statistics panel analyzes your interaction count, most contacted list, and contact method distribution. Help you understand your rhythm and maintain family bonds smarter.',
 
     'feature-6-title': 'Thoughtful Settings, Protect Your Privacy and Routine',
-    'feature-6-desc': 'Set "Suitable Contact Times" to avoid disturbing your family\'s rest. With iCloud backup and Face ID lock, your family memories are secure and give you peace of mind.',
+    'feature-6-desc': 'Set "Suitable Contact Times" to avoid disturbing your family\'s rest. With iCloud backup, your family memories are secure and give you peace of mind.',
 
     // Pricing
     'pricing-section-title': 'Compare Plans',
@@ -424,6 +426,207 @@ const translations = {
     'footer-support': 'Support',
     'footer-terms': 'Terms of Use',
     'footer-privacy': 'Privacy Policy',
+
+    // Guide page
+    'g-meta-title': 'KinCue - User Guide',
+    'g-meta-desc': 'The KinCue 1.1.0 user guide, covering the home screen, contact management, interaction logging, reminders, calendar, year in review, and KinCue+ features.',
+    'g-h1': 'KinCue User Guide',
+    'g-intro': 'A simple, intuitive companion for staying close to the people you want to remember. This guide is based on KinCue 1.1.0 and covers how to use every major feature, marking clearly which ones are free and which are exclusive to a KinCue+ subscription.',
+    'g-tag-free': 'Free',
+    'g-tag-plus': 'KinCue+ Exclusive',
+    'g-label-free': 'Free:',
+
+    'g-toc-1': 'About KinCue',
+    'g-toc-2': 'Free vs KinCue+ Overview',
+    'g-toc-3': 'First Launch & Onboarding',
+    'g-toc-4': 'Home: Who to Contact Today',
+    'g-toc-5': 'Managing Contacts',
+    'g-toc-6': 'Logging Interactions',
+    'g-toc-7': 'Reminders & Notifications',
+    'g-toc-8': 'Get to Know Them Better (KinCue+)',
+    'g-toc-9': 'Cherished Memories: Albums & Videos',
+    'g-toc-10': 'Calendar: Month, Week View & Stats',
+    'g-toc-11': 'Year in Review',
+    'g-toc-13': 'Home Screen Widget & Siri',
+    'g-toc-14': 'Settings',
+    'g-toc-15': 'KinCue+ Subscription',
+    'g-toc-16': 'Privacy & Data Security',
+
+    'g-s1-h2': 'About KinCue',
+    'g-s1-p1': 'KinCue is an iOS app that helps you stay close to your parents and family. The idea is simple: log every call, meal, video chat, or message, and KinCue gently reminds you when it\'s time to reach out again, based on the contact cadence you set.',
+    'g-s1-p2': '<strong>KinCue requires no account.</strong> All contact data and interaction records live only on your device — data is only written to your own private iCloud space when you actively turn on Backup.',
+
+    'g-s2-h2': 'Free vs KinCue+ Feature Overview',
+    'g-s2-intro': 'For a quick comparison, the same table is also available in the app under Settings → KinCue+ → Subscription, highlighting your current plan in real time.',
+    'g-s2-th1': 'Feature',
+    'g-s2-th2': 'Free',
+    'g-s2-th3': 'KinCue+',
+    'g-s2-r1-feat': 'Number of important contacts',
+    'g-s2-r1-free': 'Up to 4',
+    'g-s2-r1-pro': 'Unlimited',
+    'g-s2-r2-feat': 'Contact cadence',
+    'g-s2-r2-free': 'Basic contact cadence & reminders',
+    'g-s2-r2-pro': 'Preferred contact windows, key date reminders, follow-up tracking, smart merged reminders',
+    'g-s2-r3-feat': 'Interaction records (timeline)',
+    'g-s2-r3-free': 'View, add, filter',
+    'g-s2-r3-pro': 'Same as Free',
+    'g-s2-r4-feat': 'Get to know them better (preferences, gifts, topics)',
+    'g-s2-r4-free': 'Basic conversation topic prompts',
+    'g-s2-r4-pro': 'Fully unlocked',
+    'g-s2-r5-feat': 'Photo albums / Memory videos',
+    'g-s2-r5-free': 'Albums available',
+    'g-s2-r5-pro': 'Create, save & share memory videos',
+    'g-s2-r6-feat': 'Calendar views',
+    'g-s2-r6-free': 'Month, week & day views with filters',
+    'g-s2-r6-pro': 'Same, plus a full set of stats',
+    'g-s2-r7-feat': 'Year in Review',
+    'g-s2-r7-free': 'Basic yearly interaction count',
+    'g-s2-r7-pro': 'Trend charts, year-over-year comparison, highlights, sharing',
+    'g-s2-r9-feat': 'iCloud backup, widget, Siri shortcuts',
+    'g-s2-r9-free': 'Available',
+    'g-s2-r9-pro': 'Available',
+    'g-s2-note': 'Want a quick comparison? The app\'s Home → Settings → KinCue+ → Subscription screen has the same table, with a live comparison against your current plan.',
+
+    'g-s3-h2': 'First Launch & Onboarding',
+    'g-s3-p1': 'The first time you open KinCue, the app walks you through a few screens explaining what it can do, at your own pace, and finishes by asking for notification permission (so it can remind you at the right moments). Onboarding also ends with a table that makes clear what\'s different between Free and KinCue+, helping you decide whether to subscribe. You can also choose "Skip for now" and subscribe anytime later from Settings.',
+    'g-img-07-alt': 'Free vs KinCue+ plan comparison screen shown during first launch',
+    'g-cap-07': 'Plan comparison screen',
+    'g-s3-note': 'The entire onboarding flow is available.',
+
+    'g-s4-h2': 'Home: Who to Contact Today',
+    'g-s4-p1': 'Home is KinCue\'s default screen. The "Today\'s Rhythm" card at the top uses Due, Coming Up, and Recently Updated counts to show at a glance who to reach out to today; your full contact list follows below — filterable by All Contacts or Due for Contact, with a quick cadence switcher.',
+    'g-img-01-alt': 'Home screen',
+    'g-cap-01': 'Home screen',
+    'g-s4-note': 'The full Home screen experience is available (showing a rhythm overview for up to 4 contacts).',
+
+    'g-s5-h2': 'Managing Contacts',
+    'g-s5-h3-1': 'Add a Contact',
+    'g-s5-p1': 'Tap "Add" in the top-right corner of Home, enter a name, choose a relationship (Mom, Sister, Close Friend… or a custom one), and optionally fill in a phone number, message recipient, birthday, and contact cadence (1–365 days by default). You can also import contact info directly from your phone\'s address book.',
+    'g-img-05-alt': 'Add contact screen',
+    'g-cap-05': 'Add contact',
+    'g-s5-h3-2': 'Contact Detail Page',
+    'g-s5-p2': 'Tap into any contact to see their basic info alongside a "Relationship Health" card that uses a plant-growth metaphor (e.g. "Flourishing · Growing Strong") to show how connected you\'ve stayed, along with days since last contact, contact cadence, and interaction count. Scroll down for conversation topic prompts, the interaction timeline, and expansion cards like "Get to Know Them Better," "Share Memories," and "Sync to Social."',
+    'g-img-04-alt': 'Contact detail page',
+    'g-cap-04': 'Contact detail page',
+    'g-s5-h3-3': 'Free Plan Contact Limit',
+    'g-s5-p3': 'The Free plan allows up to <strong>4</strong> important contacts. Adding a 5th contact takes you straight to the KinCue+ upgrade screen, explaining "Unlimited contacts, for the people who matter most."',
+    'g-img-24-alt': 'Upgrade prompt shown when adding a 5th contact on the Free plan',
+    'g-cap-24': 'Upgrade prompt for a 5th contact on Free',
+    'g-s5-cmp-free': 'Adding, editing, and deleting contacts are all available (up to <strong>4</strong>).',
+    'g-s5-cmp-plus': 'Removes the contact limit — add everyone you care about.',
+
+    'g-s6-h2': 'Logging Interactions',
+    'g-s6-h3-1': 'Add an Interaction',
+    'g-s6-p1': 'On a contact\'s detail page, tap "Log Interaction," choose a method (call, FaceTime video/audio, in person, message…), fill in the time, outcome, and notes, and optionally add other family members who joined in. For calls, use "Quick Log" to add a 15-minute phone log with one tap instead of filling out the full form.',
+    'g-img-08-alt': 'Add interaction screen',
+    'g-cap-08': 'Add interaction',
+    'g-s6-h3-2': 'Interaction Timeline & Filters',
+    'g-s6-p2': 'Every contact has their own "Interaction Timeline" — a complete, time-sorted record that supports filtering by method, date range, contact channel, and note keywords, plus grouping by year or month.',
+    'g-img-09-alt': 'Interaction timeline',
+    'g-cap-09': 'Interaction timeline',
+    'g-s6-cmp-free': 'Adding, editing, and deleting interactions, plus viewing, searching, sorting, and filtering the timeline are all available (same as KinCue+).',
+    'g-s6-cmp-plus': 'Fully available, same as Free.',
+
+    'g-s7-h2': 'Reminders & Notifications',
+    'g-s7-h3-1': 'Basic Contact Reminders (Free)',
+    'g-s7-p1': 'Set a "contact cadence" for each person (e.g. every 7 days) and KinCue sends a local notification the day it\'s due, letting you know it\'s time to reach out. The app also ships with preset cadence templates for kids, spouses, and parents.',
+    'g-s7-h3-2': 'Advanced Reminders (KinCue+)',
+    'g-s7-p2': 'Under Settings → KinCue+ → Good Times to Connect, you can:',
+    'g-s7-li1': 'Set "preferred contact windows" so reminders only arrive on certain days or times, avoiding your family\'s rest time or early study hours.',
+    'g-s7-li2': 'Turn on "Smart Merge" to automatically combine multiple pending reminders within 7 days, so you\'re not overwhelmed.',
+    'g-s7-li3': 'Get "key date reminders" (anniversaries, checkups, etc., pulled from the important dates you set under "Get to Know Them Better").',
+    'g-s7-li4': 'Get "follow-up reminders" that check in after a missed call and ask whether you\'d like to reschedule.',
+    'g-img-17-alt': 'KinCue+ advanced reminder settings screen',
+    'g-cap-17': 'Advanced reminder settings',
+    'g-s7-p3': 'Tapping the advanced entry on the Free plan takes you straight to the upgrade prompt:',
+    'g-img-18-alt': 'Upgrade screen shown when a Free plan user taps advanced reminders',
+    'g-cap-18': 'Free plan upgrade prompt',
+    'g-s7-cmp-free': 'Cadence reminders (for kids, spouses, and parents).',
+    'g-s7-cmp-plus': 'Preferred contact windows, smart merged reminders, key date reminders, follow-up reminders.',
+
+    'g-s8-h2': 'Get to Know Them Better (KinCue+)',
+    'g-s8-p1': 'Scroll down on a contact\'s detail page to find the "Get to Know Them Better" card, built for remembering the small details that make your care feel personal:',
+    'g-s8-li1': '<strong>Preferences & gift ideas</strong>: clothing size, favorite foods, things they\'ve mentioned wanting, hobbies, gift inspiration.',
+    'g-s8-li2': '<strong>Key dates</strong>: anniversaries, checkups, and more (with yearly recurrence and days-ahead reminder settings).',
+    'g-s8-li3': '<strong>Conversation topic library</strong>: build a topic library with a customizable number of topics (recent chats, things to bring up, casual topics).',
+    'g-s8-p2': 'On the Free plan you\'ll only see basic default topic prompts, with an upgrade promo below the card. KinCue+ subscribers can fully edit this card.',
+    'g-img-10-alt': 'Locked "Get to Know Them Better" card on the Free plan',
+    'g-cap-10': 'Free plan (locked)',
+    'g-img-11-alt': 'Unlocked "Get to Know Them Better" card on KinCue+',
+    'g-cap-11': 'KinCue+ (unlocked)',
+    'g-s8-cmp-free': 'Only basic conversation topic prompts are shown.',
+    'g-s8-cmp-plus': 'Full access to preferences & gift ideas, key dates, and a custom topic library.',
+
+    'g-s9-h2': 'Cherished Memories: Photo Albums & Memory Videos',
+    'g-s9-h3-1': 'Photo Albums (Free)',
+    'g-s9-p1': 'Add photos to an interaction log and KinCue automatically organizes them into that contact\'s photo album. You can also manually adjust the album\'s name, cover photo, and included pictures.',
+    'g-img-12-alt': 'Photo album',
+    'g-cap-12': 'Photo album',
+    'g-s9-h3-2': 'Memory Videos (KinCue+)',
+    'g-s9-p2': 'Tap "Create Memory Video" in an album, choose up to 15 photos, pick a theme (Warm, Joyful, Grateful, Peaceful) and background music, and KinCue automatically generates a short video with transitions and text — playable and saveable in your video library, and ready to save to your phone and share with family. Both video and music are generated entirely on-device, so no family photos are ever uploaded.',
+    'g-s9-cmp-free': 'Organizing, browsing, and editing photo albums is fully available.',
+    'g-s9-cmp-plus': 'Create, save, and share memory videos.',
+
+    'g-s10-h2': 'Calendar: Month, Week View & Stats',
+    'g-s10-p1': 'The Calendar tab lets you switch between month and week views, showing each day\'s interactions along with upcoming events like contact cadences that are about to come due. Tap a date to see interactions logged that day.',
+    'g-img-02-alt': 'Calendar month view',
+    'g-cap-02': 'Month view',
+    'g-img-15-alt': 'Calendar week view (available on the Free plan)',
+    'g-cap-15': 'Week view (available on Free)',
+    'g-s10-h3': 'KinCue+ Stats Panel',
+    'g-s10-p2': 'KinCue+ subscribers get an extra stats button in the top-right corner of the calendar. Tap it to see "total interactions," "people contacted," "most contacted person," and a breakdown by contact method — a fuller picture of your habits.',
+    'g-img-16-alt': 'KinCue+ calendar stats page',
+    'g-cap-16': 'Calendar stats page',
+    'g-s10-cmp-free': 'Month, week, and day views are all available.',
+    'g-s10-cmp-plus': 'Adds full stats and insights (interaction overview, most contacted, contact method breakdown).',
+
+    'g-s11-h2': 'Year in Review',
+    'g-s11-p1': 'Tap "Year in Review" on a contact\'s detail page to switch between years and see a full year of interaction stats with that person. On the Free plan you\'ll only see a basic yearly interaction count, plus an "Unlock full Year in Review" button. KinCue+ subscribers unlock the complete yearly data, including a monthly interaction trend chart, comparisons with last year, most common contact method, growth milestones and other yearly highlights, plus recent cherished moments and a timeline — with the option to choose what to include and share it as a year-in-review recap.',
+    'g-img-13-alt': 'Basic yearly interaction summary on the Free plan',
+    'g-cap-13': 'Free plan (basic summary)',
+    'g-img-14-alt': 'Full KinCue+ Year in Review data',
+    'g-cap-14': 'KinCue+ (full data)',
+    'g-s11-cmp-free': 'Basic yearly interaction count.',
+    'g-s11-cmp-plus': 'Trend charts, year-over-year comparison, annual highlights, timeline, and sharing.',
+
+    'g-s13-h2': 'Home Screen Widget & Siri Shortcuts',
+    'g-s13-li1': '<strong>Home screen widget</strong>: add it to your Home Screen to see "who to contact today" — the number of people due for contact plus one suggested person, with quick "Contact" and "Log" buttons.',
+    'g-s13-li2': '<strong>Siri Shortcuts / App Intents</strong>: use the "Log Interaction" shortcut to tell Siri who you contacted and how, logging an interaction without even opening the app.',
+    'g-s13-note': 'Both the widget and Siri shortcuts are available, with no KinCue+ restrictions.',
+
+    'g-s14-h2': 'Settings',
+    'g-s14-p1': 'Tap the "Settings" tab at the bottom to manage:',
+    'g-s14-li1': '<strong>App language / appearance</strong>: language and Light/Dark/System appearance, applied immediately.',
+    'g-s14-li2': '<strong>iCloud backup</strong>: manually back up your contacts and interaction records to your own private iCloud (iCloud Drive/KinCue/KinCue Backup), and restore from a backup on a new device. Both backup and restore require you to be signed into iCloud in system settings.',
+    'g-s14-li3': '<strong>Privacy & data</strong>: read the full privacy policy, which explains that data stays on-device and only reaches iCloud when you actively back it up.',
+    'g-s14-li4': '<strong>Support & feedback</strong>: send a report or suggestion by email with one tap; it automatically includes your app version, iOS version, and device info for diagnostics.',
+    'g-s14-li5': '<strong>KinCue+</strong>: check your current subscription status, compare plans, subscribe, or manage your subscription (see the next section).',
+    'g-img-03-alt': 'Settings screen',
+    'g-cap-03': 'Settings screen',
+    'g-img-23-alt': 'iCloud backup settings',
+    'g-cap-23': 'iCloud backup settings',
+    'g-s14-note': 'All the settings above are available. The only difference is that entries like "Advanced Reminders" show an upgrade screen instead of the actual settings when tapped.',
+
+    'g-s15-h2': 'KinCue+ Subscription',
+    'g-s15-p1': 'You can reach the Subscription Center from Settings → KinCue+, or from any upgrade prompt in the app:',
+    'g-s15-li1': 'Choose between a <strong>monthly</strong> or <strong>yearly</strong> plan — yearly is usually the better value (the app shows the discount and the per-month equivalent price), and eligible new subscribers can enjoy a free trial.',
+    'g-s15-li3': 'Subscribed accounts show "This Apple ID is subscribed to KinCue+," with a "Manage Subscription" link straight to App Store subscription settings.',
+    'g-s15-li4': '"Restore Purchases" lets you recover and restore your subscription with one tap after switching devices or reinstalling.',
+    'g-s15-li5': 'Subscriptions are billed through your Apple account and renew automatically unless canceled at least 24 hours before the end of the current billing period.',
+    'g-img-21-alt': 'Subscription Center (Free plan)',
+    'g-cap-21': 'Subscription Center (Free)',
+    'g-img-22-alt': 'Subscription Center (KinCue+ subscribed)',
+    'g-cap-22': 'Subscription Center (KinCue+ subscribed)',
+
+    'g-s16-h2': 'Privacy & Data Security',
+    'g-s16-li1': 'KinCue requires no account — contact data, interaction records, and photos live only on your device.',
+    'g-s16-li2': 'Data is only written to your own private iCloud space, under your own Apple account, when you actively turn on Backup. KinCue never keeps a copy on any other server.',
+    'g-s16-li3': 'Subscription purchases and payments are handled by Apple; KinCue only receives your subscription status and verified subscription period.',
+    'g-s16-li4': 'The release build uses Firebase Analytics and Crashlytics for anonymous usage stats and crash diagnostics. These are never linked to your name, contacts, notes, or photos, and are never used for advertising or cross-app tracking.',
+    'g-s16-li5': 'KinCue never sells or shares your personal data, and never shows third-party ads.',
+    'g-s16-p1': 'Read the full terms in the app under Settings → Privacy & Data → Privacy Policy, or see the <a href="privacy.html" style="color: var(--accent-color);">Privacy Policy</a> page on the website.',
+
+    'g-footnote': 'This document is based on the English interface of KinCue 1.1.0; actual screens may vary slightly depending on your system version.',
   }
 };
 
@@ -434,7 +637,9 @@ class I18n {
   }
 
   init() {
+    document.documentElement.lang = this.lang;
     this.updateContent();
+    this.updateMeta();
     this.updateSwitcherUI();
     this.updateImages();
     this.updateLinks();
@@ -444,11 +649,24 @@ class I18n {
     if (this.lang === lang) return;
     this.lang = lang;
     localStorage.setItem('kincue-lang', lang);
+    document.documentElement.lang = lang;
     this.updateContent();
+    this.updateMeta();
     this.updateSwitcherUI();
     this.updateImages();
     this.updateLinks();
-    document.documentElement.lang = lang;
+  }
+
+  updateMeta() {
+    const metaDesc = document.querySelector('meta[name="description"][data-i18n-content]');
+    if (metaDesc) {
+      if (metaDesc.dataset.i18nContentOriginal === undefined) {
+        metaDesc.dataset.i18nContentOriginal = metaDesc.getAttribute('content') || '';
+      }
+      const key = metaDesc.getAttribute('data-i18n-content');
+      const value = translations[this.lang] && translations[this.lang][key];
+      metaDesc.setAttribute('content', value || metaDesc.dataset.i18nContentOriginal);
+    }
   }
 
   updateImages() {
@@ -468,6 +686,22 @@ class I18n {
         img.src = `assets/${basename}${suffix}.png`;
       }
     }
+
+    // Guide page screenshots: <img data-i18n-src="01-home" ...> -> assets/guide/01-home[_en].webp
+    document.querySelectorAll('[data-i18n-src]').forEach(img => {
+      const base = img.getAttribute('data-i18n-src');
+      img.src = `assets/guide/${base}${suffix}.webp`;
+    });
+
+    // Guide page alt text, with the original zh-TW alt cached for restoring on switch-back
+    document.querySelectorAll('[data-i18n-alt]').forEach(img => {
+      if (img.dataset.i18nAltOriginal === undefined) {
+        img.dataset.i18nAltOriginal = img.getAttribute('alt') || '';
+      }
+      const key = img.getAttribute('data-i18n-alt');
+      const value = translations[this.lang] && translations[this.lang][key];
+      img.alt = value || img.dataset.i18nAltOriginal;
+    });
   }
 
   updateLinks() {
@@ -483,10 +717,17 @@ class I18n {
   updateContent() {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(el => {
+      // Cache the element's original (zh-TW) markup once, so switching back
+      // to a language with no dictionary entry for this key still restores it.
+      if (el.dataset.i18nOriginal === undefined) {
+        el.dataset.i18nOriginal = el.innerHTML;
+      }
       const key = el.getAttribute('data-i18n');
       if (translations[this.lang] && translations[this.lang][key]) {
-        // Use innerHTML to allow <br> tags in translations
+        // Use innerHTML to allow <br> and <strong> tags in translations
         el.innerHTML = translations[this.lang][key];
+      } else {
+        el.innerHTML = el.dataset.i18nOriginal;
       }
     });
   }
